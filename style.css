@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu", system-ui;
+  font-size: 18px;
+  background-color: #05132d;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* ===== header-part css start ===== */
+.header-part {
+  padding: 25px 0;
+  background-color: #0a0a26;
+}
+.logo a {
+  color: #fff;
+  font-size: 25px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-left: 25px;
+}
+nav ul li a {
+  color: #fff;
+}
+nav ul li:hover a {
+  color: #0bd4bd;
+}
+/* ===== hero-part css start ===== */
+.hero-part {
+  padding: 90px 0;
+}
+.hero-content {
+  padding-right: 30px;
+}
+.hero-content h1 {
+  font-size: 45px;
+  color: #0bd4bd;
+  margin-bottom: 20px;
+}
+.hero-content h2 {
+  font-size: 30px;
+  color: #0bd4bd;
+  margin-bottom: 25px;
+}
+.hero-content p {
+  color: #fff;
+  margin-bottom: 35px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: justify;
+}
+.hero-content a {
+  color: #fff;
+  border: 1px solid #0bd4bd;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.hero-content a:hover {
+  background-color: #0bd4bd;
+  color: #0a0a26;
+}
+.hero-img {
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+  background-color: #0a0a26;
+}
+.hero-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px dashed #0bd4bd;
+  margin: 15px;
+}
+.contact-part .container,
+.recent-part .container,
+.skill-part .container,
+.service-part .container,
+.education-part .container {
+  display: block;
+}
+.content-wrap {
+  display: flex;
+}
+section h3 {
+  color: #0bd4bd;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+}
+section h3::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 3px;
+  background-color: #0bd4bd;
+  left: 0;
+  bottom: -10px;
+}
+.education-content {
+  width: 60%;
+  border-left: 1px solid #0bd4bd;
+}
+
+.single-edu-content {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box-duration {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.round-div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #0bd4bd;
+  background-color: transparent;
+  margin-right: 15px;
+  margin-left: -13px;
+}
+.duration {
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: 1px solid #0bd4bd;
+  color: #fff;
+  min-width: 200px;
+}
+.course p {
+  font-size: 18px;
+  color: #fff;
+}
+.course .designation {
+  opacity: 0.5;
+  margin-top: 5px;
+}
+.education-img {
+  width: 40%;
+  display: flex;
+}
+.contact-part,
+.recent-part,
+.skill-part {
+  padding: 70px 0;
+}
+
+.skill-part h3 {
+  margin-bottom: 15px;
+}
+.contact-part p,
+.service-part p,
+.recent-part p,
+.skill-part p {
+  color: #fff;
+}
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.skill-box {
+  border-left: 1px solid #0bd4bd;
+}
+.single-skill-box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.skill-name {
+  color: #fff;
+  margin-right: 25px;
+  min-width: 170px;
+}
+.skill-length {
+  width: 300px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.skill-length::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: #0bd4bd;
+  width: 240px;
+  height: 7px;
+  border-radius: 4px;
+}
+.two::after {
+  width: 220px;
+}
+.three::after {
+  width: 240px;
+}
+.four::after {
+  width: 100px;
+}
+.five::after {
+  width: 150px;
+}
+.six::after {
+  width: 60px;
+}
+.contact-part h3,
+.recent-part h3,
+.service-part h3 {
+  margin-bottom: 20px;
+}
+
+.service-item {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.single-service-item {
+  padding: 15px;
+  width: 32%;
+  border: 1px solid #0bd4bd;
+  margin: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  min-height: 190px;
+}
+.single-service-item i {
+  font-size: 40px;
+  color: #fff;
+}
+.single-service-item h4 {
+  font-size: 30px;
+  color: #0bd4bd;
+  margin: 10px 0;
+}
+.single-service-item p {
+  color: #fff;
+  line-height: 1.5;
+}
+.recent-work {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.single-recent-work {
+  width: 30%;
+  margin: 15px;
+  position: relative;
+}
+.single-recent-work::after {
+  position: absolute;
+  content: "Web Design";
+  background-color: #0bd4bd;
+  color: #05132d;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 18px;
+  left: 0;
+  bottom: 20%;
+  border-radius: 10px;
+}
+.single-recent-work a img {
+  width: 100%;
+}
+.contact-part {
+  text-align: center;
+}
+.contact-form {
+  margin-top: 35px;
+}
+form div {
+  display: flex;
+  margin-top: 15px;
+}
+form div input {
+  padding: 8px 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid #0bd4bd;
+  color: #fff;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+form textarea {
+  background-color: transparent;
+  border: 1px solid #0bd4bd;
+  padding: 8px 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-size: 18px;
+  margin-left: -20px;
+}
+form button {
+  display: block;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #0bd4bd;
+  color: #ffffff;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address {
+  color: #fff;
+  font-size: 18px;
+}
+footer {
+  border-top: 1px solid #0bd4bd;
+  padding: 35px 0;
+}
+footer .logo {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+footer h3 {
+  color: #0bd4bd;
+  margin-bottom: 15px;
+}
+footer p {
+  color: #fff;
+}
+.footer-left ul {
+  display: flex;
+}
+.footer-left ul li {
+  font-size: 30px;
+  margin-right: 10px;
+}
+footer h5 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+footer ul li {
+  margin: 10px 0;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a i {
+  margin-right: 10px;
+}
+.copyright-part{
+  text-align: center;
+  background-color: #0a0a26;
+  color: #fff;
+  padding: 25px 0;
+}
+.copyright-part p{
+  text-align: center;
+}
+.copyright-part p a{
+  color: #fff;
+}
